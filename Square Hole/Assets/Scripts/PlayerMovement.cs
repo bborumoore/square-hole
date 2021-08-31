@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     // public HitZ hitZ = HitZ.None;
     
     private CharacterController m_char;
+    private GameObject playerObj = null;
     // public Rigidbody rb;
     public float forwardSpeed = 7f;
     
@@ -34,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         m_char = GetComponent<CharacterController>();
+        playerObj = GameObject.Find("Player");
         x_mat = 0;
         rend = GetComponent<Renderer>();
         rend.enabled = true;
@@ -123,6 +125,13 @@ public class PlayerMovement : MonoBehaviour
                 x_mat = 2;
             } 
         }   
+
+        if (playerObj.transform.position.z > 225)
+        {
+            this.enabled = false;
+            Debug.Log("You Win!");
+        }
+        
 
         // Move the player consistently forward
         Vector3 moveVector = new Vector3(0, 0, forwardSpeed * Time.deltaTime);
