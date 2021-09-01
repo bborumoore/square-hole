@@ -12,7 +12,7 @@
 
 ---
 ### Description
-This is my first attempt at making a video game.  Inspired by Temple Run, Brachey's on YouTube, and the "That's right! It goes in the square hole!" video, this game is fairly simple in design, but has plenty of room to grow.
+This is my first attempt at making a video game.  Inspired by Temple Run, Brackeys on YouTube, and the "That's right! It goes in the square hole!" video, this game is fairly simple in design, but has plenty of room to grow.
 
 ---
 ### How to Use
